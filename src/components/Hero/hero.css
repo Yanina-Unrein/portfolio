@@ -1,0 +1,18 @@
+.title--hero::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--second-color);
+    bottom: 0;
+    left: 0;
+}
+
+.justify-words {
+    text-rendering: optimizeLegibility;
+}
+
+.title--color{
+    color: var(--second-color);
+}

@@ -1,0 +1,10 @@
+.technologies--container{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.iconTech--background{
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+}
