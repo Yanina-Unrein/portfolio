@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Header, Projects } from "@/components";
 import { Hero } from "@/components"
 import { Technologies } from "@/components"
  
@@ -8,6 +8,7 @@ export default function HomePage() {
         <Header />
         <Hero />
         <Technologies />
+        <Projects />
       </div>
     );
 }

@@ -7,7 +7,7 @@ export default function Technologies(){
             <div className="px-1">
                 <h2 className="title--hero relative pb-1 my-5">TECNOLOGÍAS</h2>               
             </div>
-            <div className="px-1">
+            <div className="px-2">
                 <h3>Frontend</h3>
                 <div className="flex gap-2.5 justify-around mt-4 px-2">
                     <Image src="\iconsTechnologies\html.svg" alt="icono de HTML5" width={65} height={60}/>
@@ -15,7 +15,7 @@ export default function Technologies(){
                     <Image src="\iconsTechnologies\javascript.svg" alt="icono de JavaScript" width={65} height={60}/>
                 </div>
             </div>
-            <div className="px-1 mt-6">
+            <div className="px-2 mt-8">
                 <h3>Backend</h3>
                 <div className="flex gap-2.5 justify-around mt-4 px-2">
                     <Image src="\iconsTechnologies\python.svg" alt="icono de Python" width={65} height={60}/>
@@ -24,7 +24,7 @@ export default function Technologies(){
                     </div>                                  
                 </div>
             </div>
-            <div className="px-1 mt-6">
+            <div className="px-2 mt-8">
                 <h3>Librerias / Frameworks / Preprocesadores</h3>
                 <div className="grid grid-cols-3 grid-rows-2 mt-4 gap-2.5 py-2 justify-items-center">
                     <Image src="\iconsTechnologies\angular.svg" alt="icono de Angular" width={65} height={60}/>
@@ -34,13 +34,13 @@ export default function Technologies(){
                     <Image src="\iconsTechnologies\django.svg" alt="icono de Django" width={65} height={60}/>                     
                 </div>
             </div>
-            <div className="px-1 mt-6">
+            <div className="px-2 mt-8">
                 <h3>Base de Datos</h3>
                 <div className="flex justify-center mt-4 px-2 iconTech--background mx-6">
                     <Image src="\iconsTechnologies\mysql.svg" alt="icono de MySQL" width={65} height={60}/>                                                   
                 </div>
             </div>    
-            <div className="px-1 my-6">
+            <div className="px-2 my-8">
                 <h3>Herramientas</h3>
                 <div className="flex gap-2.5 justify-around mt-4 px-2">
                     <Image src="\iconsTechnologies\git.svg" alt="icono de Git" width={65} height={60}/>
