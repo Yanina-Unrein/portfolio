@@ -1,1 +1,157 @@
+:root {
+  /* === COLORES BASE DISCORD === */
+  --discord-dark: #36393f;
+  --discord-darker: #2f3136;
+  --discord-darkest: #202225;
+  --discord-almost-black: #18191c;
+  
+  /* === COLORES DE MARCA === */
+  --discord-blurple: #5865f2;
+  --discord-blurple-dark: #4752c4;
+  --discord-green: #57f287;
+  --discord-green-dark: #3ba55c;
+  --discord-yellow: #fee75c;
+  --discord-red: #ed4245;
+  --discord-red-dark: #a12828;
+  
+  /* === COLORES DE TEXTO === */
+  --text-primary: #ffffff;
+  --text-secondary: #dcddde;
+  --text-muted: #72767d;
+  --text-link: #00aff4;
+  
+  /* === COLORES DE FONDO === */
+  --bg-primary: #36393f;
+  --bg-secondary: #2f3136;
+  --bg-tertiary: #202225;
+  --bg-accent: #4f545c;
+  --bg-floating: #18191c;
+  
+  /* === COLORES INTERACTIVOS === */
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #ffffff;
+  --interactive-muted: #4f545c;
+  
+  /* === COLORES DE ESTADO === */
+  --status-online: #43b581;
+  --status-idle: #faa61a;
+  --status-dnd: #f04747;
+  --status-offline: #747f8d;
+  
+  /* === COLORES DE BOTONES === */
+  --btn-primary-bg: var(--discord-blurple);
+  --btn-primary-bg-hover: var(--discord-blurple-dark);
+  --btn-primary-text: #ffffff;
+  
+  --btn-secondary-bg: var(--bg-accent);
+  --btn-secondary-bg-hover: var(--bg-secondary);
+  --btn-secondary-text: var(--text-secondary);
+  
+  --btn-success-bg: var(--discord-green);
+  --btn-success-bg-hover: var(--discord-green-dark);
+  --btn-success-text: #ffffff;
+  
+  --btn-danger-bg: var(--discord-red);
+  --btn-danger-bg-hover: var(--discord-red-dark);
+  --btn-danger-text: #ffffff;
+  
+  /* === SOMBRAS === */
+  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.4);
+  
+  /* === BORDES === */
+  --border-radius: 4px;
+  --border-radius-large: 8px;
+  --border-color: rgba(79, 84, 92, 0.48);
+  
+  /* === TRANSICIONES === */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  
+  /* === SCROLLBAR === */
+  --scrollbar-thumb: #202225;
+  --scrollbar-thumb-hover: #1a1b1e;
+}
 
+/* === TEMA CLARO === */
+[data-theme="light"] {
+  /* === COLORES BASE === */
+  --discord-dark: #f2f3f5;
+  --discord-darker: #ebedef;
+  --discord-darkest: #ffffff;
+  --discord-almost-black: #ffffff;
+  
+  /* === COLORES DE TEXTO === */
+  --text-primary: #060607;
+  --text-secondary: #2e3338;
+  --text-muted: #747f8d;
+  --text-link: #0068e0;
+  
+  /* === COLORES DE FONDO === */
+  --bg-primary: #f2f3f5;
+  --bg-secondary: #ebedef;
+  --bg-tertiary: #ffffff;
+  --bg-accent: #e3e5e8;
+  --bg-floating: #ffffff;
+  
+  /* === COLORES INTERACTIVOS === */
+  --interactive-normal: #4f5660;
+  --interactive-hover: #2e3338;
+  --interactive-active: #060607;
+  --interactive-muted: #c7ccd1;
+  
+  /* === SOMBRAS === */
+  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  /* === BORDES === */
+  --border-color: rgba(6, 6, 7, 0.08);
+  
+  /* === SCROLLBAR === */
+  --scrollbar-thumb: #e3e5e8;
+  --scrollbar-thumb-hover: #d4d7dc;
+  
+  /* === BOTONES (ajustes para tema claro) === */
+  --btn-secondary-bg: #e3e5e8;
+  --btn-secondary-bg-hover: #d4d7dc;
+  --btn-secondary-text: var(--text-secondary);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.375;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}

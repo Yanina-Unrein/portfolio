@@ -1,0 +1,103 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "slogan": "Frontend-first, but always ready to take on any fullstack challenge.",
+    "copyright": "Page made with ❤️",
+    "altImage": "Girl holding a pink laptop, surrounded by two cats playing around, smiling at the camera."
+  },
+
+  "hero": {
+    "title": "Hi, I'm Yanina Unrein",
+    "slogan": "Frontend-first, but always ready to take on any fullstack challenge."
+  },
+
+  "about": {
+    "title": "About Me",
+    "subtitle": "Hi, I'm Yanina Unrein",
+    "descriptions": [
+      "Fullstack Developer with a Frontend focus and one and a half years of experience. Specialized in designing, developing, and optimizing web applications, with the ability to contribute to larger fullstack projects. Experienced in agile methodologies and collaborative work.",
+      "I am a proactive, committed, and self-taught professional, always seeking to give my best in every project. I am passionate about programming and developing innovative solutions.",
+      "In July 2024, I graduated as a Web Development and Digital Applications Technician from Instituto Superior Politécnico Córdoba. I am currently studying a Web Development degree at the University of Entre Ríos, in my second year, and continuously learning through courses, bootcamps, or self-taught methods."
+    ],
+    "cvText": "If you are interested in learning more about my professional experience and academic background, you can download my Curriculum Vitae below:",
+    "btnDownload": "Download CV"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitles": ["Selected Works", "Collaborations"]
+  },
+
+  "technologies": {
+    "title": "Technologies",
+    "descriptions": [
+      "My main area of expertise is Frontend development, but my training is FullStack.",
+      "HTML, CSS, JS, creating small and medium web applications with Angular or React, custom plugins, functions, animations, and interactive design coding. I also have experience as a developer with CMS platforms such as WordPress, Shopify, CPanel, and Wix."
+    ],
+    "linkTextPrefix": "Visit my ",
+    "linkTextSuffix": " for more details."
+  },
+
+  "experience": {
+    "title": "Experience",
+    "description": "Here are some of my previous roles and what I have learned...",
+    "altImage": "Girl holding a pink laptop, surrounded by two cats playing around, smiling at the camera."
+  },
+
+  "contact": {
+    "title": "Contact Me"
+  },
+
+  "contactForm": {
+    "name": "Full Name",
+    "namePlaceholder": "Yanina Unrein",
+    "email": "Email Address",
+    "message": "Message",
+    "messagePlaceholder": "Leave your message here",
+    "btnSubmit": "Send",
+    "altImage": "Orange cat typing fast on a computer",
+    "messageSubmit": "Message sent, I will get in touch with you as soon as I read it. Thank you very much!",
+    "errors": {
+      "nameRequired": "Name is required.",
+      "nameInvalid": "Name can only contain letters and spaces.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Email is not valid.",
+      "messageRequired": "Message is required."
+    }
+  },
+
+  "projectDetail": {
+    "description": "Description",
+    "responsabilities": "Responsibilities",
+    "technologies": "Technologies"
+  },
+
+  "errorPage": {
+    "title": "404 - Page not found",
+    "subtitle": "⬐ This is where everyone is ⬎",
+    "imageYou": "/img/404/tu-w.png",
+    "imageAlt": "Image showing where you are right now",
+    "youMessage": "(A little far away)",
+    "paragraphs": [
+      "Do you know how to navigate to find your way back?",
+      "We will guide you so you don't get lost."
+    ],
+    "btnBack": "GO BACK"
+  },
+
+  "seo": {
+    "title": "Yanina Unrein - Fullstack Developer",
+    "metaDescription": "Full Stack Developer with experience in scalable websites and applications. Explore my projects, the technologies I use, and learn more about me. Contact me to collaborate on your next digital challenge."
+  }
+}

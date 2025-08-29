@@ -1,0 +1,102 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "contact": "Contacto"
+  },
+
+  "footer": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "slogan": "Frontend-first, pero siempre lista para asumir cualquier desafío fullstack.",
+    "copyright": "Página hecha con el ❤️",
+    "altImage": "Niña con laptop rosa en mano, rodeada de dos gatos que juegan a su alrededor, sonriendo hacia la cámara."
+  },
+
+  "hero": {
+    "title": "Hola, soy Yanina Unrein",
+    "slogan": "Frontend-first, pero siempre lista para asumir cualquier desafío fullstack."
+  },
+
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Hola, soy Yanina Unrein",
+    "descriptions": [
+      "Fullstack Developer con enfoque Frontend y 1 año y medio de experiencia. Especializada en diseño, desarrollo y optimización de aplicaciones web, con capacidad para contribuir en proyectos fullstack de mayor envergadura. Experiencia en metodologías ágiles y trabajo colaborativo.",
+      "Soy una profesional proactiva, comprometida y autodidacta, siempre buscando dar lo mejor de mí en cada proyecto. Me apasiona la programación y el desarrollo de soluciones innovadoras.",
+      "En julio del 2024 me recibí como Técnica en Desarrollo Web y Aplicaciones Digitales en el Instituto Superior Politécnico Córdoba. Actualmente me encuentro estudiando la Tecnicatura en Desarrollo Web en la Universidad de Entre Ríos en mi segundo año y en continuo aprendizaje con cursos, bootcamp o de forma autodidacta."
+    ],
+    "cvText": "Si estás interesado en conocer más sobre mi experiencia profesional y formación académica, puedes descargar mi Curriculum Vitae a continuación:",
+    "btnDownload": "Descargar CV"
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "subtitles": ["Trabajos seleccionados", "Colaboraciones"]
+  },
+
+  "technologies": {
+    "title": "Tecnologías",
+    "descriptions": [
+      "Mi área principal de especialización es el desarrollo Frontend pero mi formación es FullStack.",
+      "HTML, CSS, JS, creación de aplicaciones web pequeñas y medianas con Angular o React, complementos personalizados, funciones, animaciones y codificación de diseños interactivos. También tengo experiencia como desarrolladora con CMS como WordPress, Shopify, CPanel, Wix."
+    ],
+    "linkTextPrefix": "Visita mi ",
+    "linkTextSuffix": " para más detalles."
+  },
+
+  "experience": {
+    "title": "Experiencia",
+    "description": "Aquí están algunos de mis roles anteriores y lo que he aprendido...",
+    "altImage": "Niña con laptop rosa en mano, rodeada de dos gatos que juegan a su alrededor, sonriendo hacia la cámara."
+  },
+
+  "contact": {
+    "title": "Contáctame"
+  },
+
+  "contactForm": {
+    "name": "Nombre y Apellido",
+    "namePlaceholder": "Yanina Unrein",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "messagePlaceholder": "Deja aquí tu mensaje",
+    "btnSubmit": "Enviar",
+    "altImage": "Gato anaranjado tecleando rápido en una computadora",
+    "messageSubmit": "Mensaje enviado, me pondré en contacto contigo apenas lo lea. ¡Muchas gracias!",
+    "errors": {
+      "nameRequired": "El nombre es obligatorio.",
+      "nameInvalid": "El nombre solo puede contener letras y espacios.",
+      "emailRequired": "El correo electrónico es obligatorio.",
+      "emailInvalid": "El correo electrónico no es válido.",
+      "messageRequired": "El mensaje es obligatorio."
+    }
+  },
+
+  "projectDetail": {
+    "description": "Descripción",
+    "responsabilities": "Responsabilidades",
+    "technologies": "Tecnologías"
+  },
+  "errorPage": {
+    "title": "404 - Página no encontrada",
+    "subtitle": "⬐ Aquí es donde está todo el mundo ⬎",
+    "imageYou": "/img/404/tu-w.png",
+    "imageAlt": "Imagen que describe donde estás tú en este momento",
+    "youMessage": "(Un poco leeeejos)",
+    "paragraphs": [
+      "¿Sabes cómo orientarte para encontrar tu camino de vuelta?",
+      "Te guiaremos para que no te pierdas"
+    ],
+    "btnBack": "Regresar"
+  },
+
+  "seo": {
+    "title": "Yanina Unrein - Fullstack Developer",
+    "metaDescription": "Desarrolladora Full Stack con experiencia en sitios web y aplicaciones escalables. Explora mis proyectos, las tecnologías que utilizo y conoce más sobre mí. Contáctame para colaborar en tu próximo desafío digital."
+  }
+}

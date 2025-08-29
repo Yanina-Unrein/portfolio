@@ -44,13 +44,8 @@ discord-portfolio/
 │   │   ├── images/                 # Imágenes y avatares
 │   │   ├── icons/                  # Iconos personalizados
 │   │   └── data/                   # Data JSON estática
-│   ├── styles/
-│   │   ├── variables.css          # Variables CSS de Discord
-│   │   ├── discord-theme.css      # Tema principal
-│   │   └── components.css         # Estilos de componentes
 │   └── environments/
 ├── docs/                           # Documentación adicional
-├── cypress/                        # Tests e2e
 └── README.md
 ```
 

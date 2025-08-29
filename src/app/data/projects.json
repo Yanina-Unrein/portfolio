@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "E-commerce Platform",
+      "description": "Plataforma completa de e-commerce con Angular y Node.js",
+      "longDescription": "Una aplicación completa de e-commerce que incluye gestión de productos, carrito de compras, procesamiento de pagos y panel de administración. Desarrollada con las últimas tecnologías web.",
+      "technologies": [
+        { "name": "Angular", "category": "frontend", "icon": "🅰️", "color": "#DD0031" },
+        { "name": "Node.js", "category": "backend", "icon": "🟢", "color": "#339933" },
+        { "name": "MongoDB", "category": "database", "icon": "🍃", "color": "#47A248" },
+        { "name": "TypeScript", "category": "frontend", "icon": "📘", "color": "#3178C6" }
+      ],
+      "imageUrl": "assets/images/projects/ecommerce.png",
+      "demoUrl": "https://demo-ecommerce.example.com",
+      "repositoryUrl": "https://github.com/username/ecommerce",
+      "status": "completed",
+      "featured": true,
+      "createdAt": "2024-01-15T00:00:00Z",
+      "updatedAt": "2024-02-15T00:00:00Z",
+      "category": "web"
+    },
+    {
+      "id": "2",
+      "title": "Task Management App",
+      "description": "Aplicación de gestión de tareas con funcionalidades colaborativas",
+      "longDescription": "Una aplicación moderna para gestión de tareas que permite trabajo en equipo, seguimiento de progreso y notificaciones en tiempo real.",
+      "technologies": [
+        { "name": "React", "category": "frontend", "icon": "⚛️", "color": "#61DAFB" },
+        { "name": "Express", "category": "backend", "icon": "🚂", "color": "#000000" },
+        { "name": "PostgreSQL", "category": "database", "icon": "🐘", "color": "#336791" },
+        { "name": "Socket.io", "category": "tools", "icon": "🔌", "color": "#010101" }
+      ],
+      "imageUrl": "assets/images/projects/taskmanager.png",
+      "demoUrl": "https://demo-tasks.example.com",
+      "repositoryUrl": "https://github.com/username/taskmanager",
+      "status": "completed",
+      "featured": true,
+      "createdAt": "2023-11-20T00:00:00Z",
+      "updatedAt": "2024-01-10T00:00:00Z",
+      "category": "web"
+    },
+    {
+      "id": "3",
+      "title": "Weather Dashboard",
+      "description": "Dashboard interactivo del clima con gráficos y pronósticos",
+      "technologies": [
+        { "name": "Vue.js", "category": "frontend", "icon": "💚", "color": "#4FC08D" },
+        { "name": "Chart.js", "category": "tools", "icon": "📊", "color": "#FF6384" },
+        { "name": "OpenWeather API", "category": "tools", "icon": "🌤️", "color": "#EB6E4B" }
+      ],
+      "imageUrl": "assets/images/projects/weather.png",
+      "demoUrl": "https://demo-weather.example.com",
+      "repositoryUrl": "https://github.com/username/weather-dashboard",
+      "status": "in-progress",
+      "featured": false,
+      "createdAt": "2024-03-01T00:00:00Z",
+      "updatedAt": "2024-03-15T00:00:00Z",
+      "category": "web"
+    }
+  ]
+}
