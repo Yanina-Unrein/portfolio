@@ -1,18 +1,25 @@
-<div class="discord-container" [class]="'theme-' + themeService.currentTheme">
-  <app-sidebar-component
-    (channelToggle)="toggleChannels()" 
-    (navigateTo)="navigateTo($event)">
-  </app-sidebar-component>
-  <div class="channel-list">
-    <app-channels-sidebar></app-channels-sidebar>
-  </div>
-  <div class="main-content">
-    <app-channel-header></app-channel-header>
-    <div class="content-area">
-      <router-outlet></router-outlet>
+<div class="app-container">
+  <app-header-bar></app-header-bar>
+  
+  <div class="discord-container" [class]="'theme-' + themeService.currentTheme()">
+    <app-sidebar-component
+      (channelToggle)="toggleChannels()" 
+      (navigateTo)="navigateTo($event)">
+    </app-sidebar-component>
+    
+    <div class="channel-list" [class.open]="channelsOpen()">
+      <app-channels-sidebar></app-channels-sidebar>
     </div>
-  </div>
-  <div class="right-sidebar">
-    <app-members-sidebar></app-members-sidebar>
+    
+    <div class="main-content">
+      <app-channel-header></app-channel-header>
+      <div class="content-area">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    
+    <div class="right-sidebar">
+      <app-members-sidebar></app-members-sidebar>
+    </div>
   </div>
 </div>

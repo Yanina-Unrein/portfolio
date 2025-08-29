@@ -20,27 +20,28 @@ private readonly STORAGE_KEY = 'discord-portfolio-theme';
   }
 
   private initializeTheme(): void {
-    // Solo ejecutar en el navegador
     if (isPlatformBrowser(this.platformId)) {
       const savedTheme = localStorage.getItem(this.STORAGE_KEY) as Theme;
-      if (savedTheme === 'light' || savedTheme === 'dark') {
+      
+      if (savedTheme) {
         this.setTheme(savedTheme);
-        return;
+      } else {
+        // Usar preferencia del sistema si no hay tema guardado
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        this.setTheme(systemPrefersDark ? 'dark' : 'light');
       }
 
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      this.setTheme(prefersDark ? 'dark' : 'light');
-
+      // Escuchar cambios en la preferencia del sistema
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem(this.STORAGE_KEY)) {
           this.setTheme(e.matches ? 'dark' : 'light');
         }
       });
     } else {
-      // Valor por defecto para SSR
-      this.setTheme('dark');
+      this.setTheme('dark'); // Default para SSR
     }
   }
+
 
   private setupThemeEffect(): void {
     effect(() => {

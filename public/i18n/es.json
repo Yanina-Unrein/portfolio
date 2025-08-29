@@ -1,12 +1,4 @@
 {
-  "navbar": {
-    "home": "Inicio",
-    "about": "Sobre mí",
-    "experience": "Experiencia",
-    "projects": "Proyectos",
-    "technologies": "Tecnologías",
-    "contact": "Contacto"
-  },
   "servers":{
     "menu": "Menú de canales",
     "home": "Inicio",
@@ -17,6 +9,18 @@
     "contact": "Contacto",
     "github": "Visitar mi GitHub",
     "linkedin": "Visitar mi LinkedIn"
+  },
+   "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "contact": "Contacto"
+  },
+  "headerBar": {
+    "nameServer": "Yanina Unrein",
+    "role": "Fullstack Developer"
   },
   "footer": {
     "home": "Inicio",
@@ -30,7 +34,6 @@
     "title": "Hola, soy Yanina Unrein",
     "slogan": "Frontend-first, pero siempre lista para asumir cualquier desafío fullstack."
   },
-
   "about": {
     "title": "Sobre mí",
     "subtitle": "Hola, soy Yanina Unrein",
@@ -42,12 +45,10 @@
     "cvText": "Si estás interesado en conocer más sobre mi experiencia profesional y formación académica, puedes descargar mi Curriculum Vitae a continuación:",
     "btnDownload": "Descargar CV"
   },
-
   "projects": {
     "title": "Proyectos",
     "subtitles": ["Trabajos seleccionados", "Colaboraciones"]
   },
-
   "technologies": {
     "title": "Tecnologías",
     "descriptions": [
@@ -57,17 +58,14 @@
     "linkTextPrefix": "Visita mi ",
     "linkTextSuffix": " para más detalles."
   },
-
   "experience": {
     "title": "Experiencia",
     "description": "Aquí están algunos de mis roles anteriores y lo que he aprendido...",
     "altImage": "Niña con laptop rosa en mano, rodeada de dos gatos que juegan a su alrededor, sonriendo hacia la cámara."
   },
-
   "contact": {
     "title": "Contáctame"
   },
-
   "contactForm": {
     "name": "Nombre y Apellido",
     "namePlaceholder": "Yanina Unrein",
@@ -85,7 +83,6 @@
       "messageRequired": "El mensaje es obligatorio."
     }
   },
-
   "projectDetail": {
     "description": "Descripción",
     "responsabilities": "Responsabilidades",

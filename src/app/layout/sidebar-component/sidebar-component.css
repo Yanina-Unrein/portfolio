@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
-    background-color: var(--discord-dark);
+    gap: 10px;
+    background: var(--discord-almost-black);
     width: 72px;
     height: 100vh;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-medium);
 }

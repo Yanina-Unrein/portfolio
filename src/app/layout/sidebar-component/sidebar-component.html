@@ -1,12 +1,14 @@
 <div class="servers-container">
-  @for (server of servers(); track server.id) {
-    <app-server-icon-component-button
-      [server]="server"
-      [active]="activeServer() === server.id"
-      [tooltip]="getTranslatedTooltip(server)"
-      (serverClick)="onServerClick($event)">
-    </app-server-icon-component-button>
-  }
+  <nav>
+    @for (server of servers(); track server.id) {
+      <app-server-icon-component-button
+        [server]="server"
+        [active]="activeServer() === server.id"
+        [tooltip]="getTranslatedTooltip(server)"
+        (serverClick)="onServerClick($event)">
+      </app-server-icon-component-button>
+    }
+  </nav>
 </div>
 
 

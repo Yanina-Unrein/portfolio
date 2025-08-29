@@ -1,0 +1,62 @@
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-icon {
+  width: 100%;
+  transition: all var(--transition-normal);
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-icon.hidden {
+  opacity: 0;
+  transform: scale(0.5) rotate(-90deg);
+  pointer-events: none;
+}
+
+.theme-icon.sun {
+  filter: drop-shadow(0 0 2px rgba(253, 172, 41, 0.664));
+}
+
+.theme-icon.moon {
+  filter: drop-shadow(0 0 2px rgba(231, 231, 231, 0.5));
+}
+
+/* Efectos de animación adicionales */
+.theme-icon {
+  transition: opacity 0.3s ease, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.theme-toggle-btn:hover .theme-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.theme-toggle-btn:hover .theme-icon.hidden {
+  transform: scale(0.6) rotate(-10deg);
+}
+
+/* Para modo reducido de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle-btn,
+  .theme-icon {
+    transition: none;
+  }
+}

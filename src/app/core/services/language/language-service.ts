@@ -4,31 +4,33 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { Translations } from '@/app/core/models/translations';
 import { isPlatformBrowser } from '@angular/common';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
-   private readonly STORAGE_KEY = 'discord-portfolio-language';
+  private readonly STORAGE_KEY = 'discord-portfolio-language';
   private platformId = inject(PLATFORM_ID);
+  private router = inject(Router);
+  private http = inject(HttpClient);
 
   public readonly currentLanguage = signal<Language>('es');
   public readonly translations = signal<Translations>({} as Translations);
 
-  constructor(private http: HttpClient) {
+  constructor() {
     this.initializeLanguage();
   }
 
   private async initializeLanguage(): Promise<void> {
     let initialLang: Language = 'es';
     
-    // Solo ejecutar en el navegador
     if (isPlatformBrowser(this.platformId)) {
       const savedLanguage = localStorage.getItem(this.STORAGE_KEY) as Language;
-      const browserLang = navigator.language.toLowerCase().startsWith('es') ? 'es' : 'en';
-      initialLang = savedLanguage || browserLang;
+      const browserLang = navigator.language.split('-')[0] as Language;
+      initialLang = savedLanguage || (['es', 'en'].includes(browserLang) ? browserLang : 'es');
     }
 
-    await this.setLanguage(initialLang);
+    await this.setLanguage(initialLang, false);
   }
 
   public async toggleLanguage(): Promise<void> {
@@ -36,10 +38,9 @@ export class LanguageService {
     await this.setLanguage(newLang);
   }
 
-  public async setLanguage(lang: Language): Promise<void> {
+  public async setLanguage(lang: Language, navigate: boolean = true): Promise<void> {
     this.currentLanguage.set(lang);
     
-    // Solo guardar en localStorage en el navegador
     if (isPlatformBrowser(this.platformId)) {
       localStorage.setItem(this.STORAGE_KEY, lang);
     }
@@ -49,19 +50,28 @@ export class LanguageService {
         this.http.get<Translations>(`/i18n/${lang}.json`)
       );
       this.translations.set(data);
+      
+      // Navegar a la misma ruta pero con el nuevo idioma
+      if (navigate) {
+        const currentUrl = this.router.url;
+        const newUrl = currentUrl.replace(/^\/(es|en)/, `/${lang}`);
+        this.router.navigateByUrl(newUrl || `/${lang}`);
+      }
     } catch (error) {
       console.error(`Error loading ${lang}.json`, error);
       this.translations.set({} as Translations);
     }
   }
 
-  // Devuelve la traducción según la clave tipo 'hero.title', 'about.descriptions.0', etc.
   public t(key: string): string {
     const keys = key.split('.');
     let result: any = this.translations();
+    
     for (const k of keys) {
-      result = result?.[k];
+      if (result === null || result === undefined) break;
+      result = result[k];
     }
-    return result || key;
+    
+    return result !== null && result !== undefined ? result : key;
   }
 }

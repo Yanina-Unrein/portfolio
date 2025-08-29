@@ -1,12 +1,4 @@
 {
-  "navbar": {
-    "home": "Home",
-    "about": "About Me",
-    "experience": "Experience",
-    "projects": "Projects",
-    "technologies": "Technologies",
-    "contact": "Contact"
-  },
   "servers":{
     "menu": "Channels Menu",
     "home": "Home",
@@ -17,6 +9,18 @@
     "contact": "Contact",
     "github": "Visit my GitHub",
     "linkedin": "Visit my LinkedIn"
+  },
+    "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  },
+    "headerBar": {
+    "nameServer": "Yanina Unrein",
+    "role": "Fullstack Developer"
   },
   "footer": {
     "home": "Home",

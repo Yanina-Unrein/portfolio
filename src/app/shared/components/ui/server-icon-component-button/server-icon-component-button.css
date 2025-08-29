@@ -8,41 +8,30 @@
 .server-icon {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-large);
+  background: var(--bg-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: border-radius 0.15s ease, background-color 0.15s ease;
+  transition: border-radius 0.15s ease, background 0.15s ease;
   position: relative;
-  color: var(--text-secondary);
 }
 
 .server-icon:hover {
-  border-radius: var(--border-radius-large);
-  background-color: var(--discord-blurple);
+  background: var(--discord-blurple);
 }
 
-.server-icon.active {
-  border-radius: var(--border-radius-large);
-  background-color: var(--discord-blurple);
+.server-icon.custom-image:hover {
+  background: var(--discord-darker);
 }
 
-.server-icon.active::before {
-  content: '';
-  position: absolute;
-  left: -8px;
-  height: 20px;
-  width: 4px;
-  background-color: white;
-  border-radius: 0 4px 4px 0;
+.server-icon.active.custom-image {
+  background-color: var(--discord-darker); /* Mismo color que el hover para consistencia */
 }
 
 .server-image {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  height: 25px;
   object-fit: cover;
 }
 
@@ -51,7 +40,7 @@
   left: 60px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--bg-floating);
+  background: var(--bg-floating);
   color: var(--text-primary);
   padding: 8px 12px;
   border-radius: 4px;
@@ -89,18 +78,6 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--discord-red);
+  background: var(--discord-red);
   border: 2px solid var(--bg-tertiary);
-}
-
-/* Responsive: Ocultar tooltips en móviles */
-@media (max-width: 768px) {
-  .server-tooltip {
-    display: none;
-  }
-  
-  .server-icon {
-    width: 40px;
-    height: 40px;
-  }
 }

@@ -1,8 +1,9 @@
+import { Component, EventEmitter, inject, Output, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { DiscordServer } from '@/app/core/models/navigation';
 import { LanguageService } from '@/app/core/services/language/language-service';
 import { ServersService } from '@/app/core/services/servers/servers-service';
 import { ServerIconComponentButton } from '@/app/shared/components/ui/server-icon-component-button/server-icon-component-button';
-import { Component, EventEmitter, inject, Output, signal } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar-component',
@@ -13,12 +14,12 @@ import { Component, EventEmitter, inject, Output, signal } from '@angular/core';
 })
 export class SidebarComponent {
   @Output() channelToggle = new EventEmitter<void>();
-  @Output() navigateTo = new EventEmitter<string>();
-  
+   @Output() navigateTo = new EventEmitter<string>();
+
   languageService = inject(LanguageService);
   serversService = inject(ServersService);
+  router = inject(Router);
   
-   // Usa directamente la signal del servicio
   servers = this.serversService.servers;
   activeServer = signal('welcome');
 
@@ -27,10 +28,12 @@ export class SidebarComponent {
       this.channelToggle.emit();
       return;
     }
+    
     if (server.externalUrl) {
       window.open(server.externalUrl, '_blank');
       return;
     }
+    
     if (server.route) {
       this.activeServer.set(server.id);
       this.navigateTo.emit(server.route);
@@ -38,7 +41,7 @@ export class SidebarComponent {
   }
 
   getTranslatedTooltip(server: DiscordServer): string {
-    if (server.tooltip.startsWith('navbar.')) {
+    if (server.tooltip.startsWith('servers.')) {
       return this.languageService.t(server.tooltip);
     }
     return server.tooltip;

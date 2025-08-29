@@ -1,1 +1,10 @@
-<p>language-button works!</p>
+<button 
+  class="language-toggle-btn"
+  (click)="languageService.toggleLanguage()">
+  @if (languageService.currentLanguage() === 'es') {
+    ES
+  } @else {
+    EN
+  }
+
+</button>

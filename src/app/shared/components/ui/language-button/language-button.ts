@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { LanguageService } from '@/app/core/services/language/language-service';
+import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-language-button',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './language-button.css'
 })
 export class LanguageButton {
-
+  languageService = inject(LanguageService);
 }

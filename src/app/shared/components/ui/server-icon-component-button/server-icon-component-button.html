@@ -2,6 +2,7 @@
   <div 
     class="server-icon" 
     [class.active]="active"
+    [class.custom-image]="server.isCustomImage"
     (click)="onClick()"
   >
     @if (server.isCustomImage) {
