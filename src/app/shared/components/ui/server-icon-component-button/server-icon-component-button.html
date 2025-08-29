@@ -1,0 +1,18 @@
+<div class="server-icon-wrapper">
+  <div 
+    class="server-icon" 
+    [class.active]="active"
+    (click)="onClick()"
+  >
+    @if (server.isCustomImage) {
+      <img [src]="server.icon" [alt]="tooltip" class="server-image">
+    } @else {
+      <i [class]="server.icon"></i>
+    }
+  </div>
+  
+  <!-- Tooltip que aparece al hacer hover -->
+  <div class="server-tooltip">
+    {{ tooltip }}
+  </div>
+</div>

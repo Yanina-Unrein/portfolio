@@ -1,15 +1,18 @@
 <div class="discord-container" [class]="'theme-' + themeService.currentTheme">
-      <div class="channel-list">
-        
-      </div>
-      <div class="main-content">
-        
-        <div class="content-area">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-      <div class="right-sidebar">
-        
-        
-      </div>
+  <app-sidebar-component
+    (channelToggle)="toggleChannels()" 
+    (navigateTo)="navigateTo($event)">
+  </app-sidebar-component>
+  <div class="channel-list">
+    <app-channels-sidebar></app-channels-sidebar>
+  </div>
+  <div class="main-content">
+    <app-channel-header></app-channel-header>
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="right-sidebar">
+    <app-members-sidebar></app-members-sidebar>
+  </div>
 </div>

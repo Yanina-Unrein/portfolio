@@ -1,0 +1,58 @@
+{
+  "servers": [
+    {
+      "id": "menu",
+      "icon": "/assets/icons/discord.svg",
+      "tooltip": "servers.menu",
+      "route": "toggle"
+    },
+    {
+      "id": "welcome",
+      "icon": "fas fa-home",
+      "tooltip": "servers.home",
+      "route": "welcome"
+    },
+    {
+      "id": "about",
+      "icon": "fas fa-user",
+      "tooltip": "servers.about",
+      "route": "about"
+    },
+    {
+      "id": "experience",
+      "icon": "fas fa-briefcase",
+      "tooltip": "servers.experience",
+      "route": "experience"
+    },
+    {
+      "id": "projects",
+      "icon": "fas fa-code",
+      "tooltip": "servers.projects",
+      "route": "projects"
+    },
+    {
+      "id": "skills",
+      "icon": "fas fa-cog",
+      "tooltip": "servers.technologies",
+      "route": "skills"
+    },
+    {
+      "id": "contact",
+      "icon": "fas fa-envelope",
+      "tooltip": "servers.contact",
+      "route": "contact"
+    },
+    {
+      "id": "github",
+      "icon": "/assets/icons/github_dark.svg",
+      "tooltip": "servers.github",
+      "externalUrl": "https://github.com/tu-usuario"
+    },
+    {
+      "id": "linkedin",
+      "icon": "/assets/icons/linkedin.svg",
+      "tooltip": "servers.linkedin",
+      "externalUrl": "https://linkedin.com/in/yanina-unrein"
+    }
+  ]
+}

@@ -7,7 +7,17 @@
     "technologies": "Technologies",
     "contact": "Contact"
   },
-
+  "servers":{
+    "menu": "Channels Menu",
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact",
+    "github": "Visit my GitHub",
+    "linkedin": "Visit my LinkedIn"
+  },
   "footer": {
     "home": "Home",
     "projects": "Projects",

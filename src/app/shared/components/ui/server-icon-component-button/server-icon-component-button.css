@@ -1,0 +1,106 @@
+.server-icon-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.server-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-radius 0.15s ease, background-color 0.15s ease;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.server-icon:hover {
+  border-radius: var(--border-radius-large);
+  background-color: var(--discord-blurple);
+}
+
+.server-icon.active {
+  border-radius: var(--border-radius-large);
+  background-color: var(--discord-blurple);
+}
+
+.server-icon.active::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  height: 20px;
+  width: 4px;
+  background-color: white;
+  border-radius: 0 4px 4px 0;
+}
+
+.server-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.server-tooltip {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--bg-floating);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: var(--shadow-medium);
+}
+
+.server-tooltip::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid var(--bg-floating);
+}
+
+.server-icon-wrapper:hover .server-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--discord-red);
+  border: 2px solid var(--bg-tertiary);
+}
+
+/* Responsive: Ocultar tooltips en móviles */
+@media (max-width: 768px) {
+  .server-tooltip {
+    display: none;
+  }
+  
+  .server-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -63,7 +63,8 @@
   
   /* === BORDES === */
   --border-radius: 4px;
-  --border-radius-large: 8px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
   --border-color: rgba(79, 84, 92, 0.48);
   
   /* === TRANSICIONES === */

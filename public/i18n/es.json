@@ -7,7 +7,17 @@
     "technologies": "Tecnologías",
     "contact": "Contacto"
   },
-
+  "servers":{
+    "menu": "Menú de canales",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "contact": "Contacto",
+    "github": "Visitar mi GitHub",
+    "linkedin": "Visitar mi LinkedIn"
+  },
   "footer": {
     "home": "Inicio",
     "projects": "Proyectos",
@@ -16,7 +26,6 @@
     "copyright": "Página hecha con el ❤️",
     "altImage": "Niña con laptop rosa en mano, rodeada de dos gatos que juegan a su alrededor, sonriendo hacia la cámara."
   },
-
   "hero": {
     "title": "Hola, soy Yanina Unrein",
     "slogan": "Frontend-first, pero siempre lista para asumir cualquier desafío fullstack."
